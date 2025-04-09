@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    background: url('background2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 100px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    background: rgba(238, 169, 78, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading */
+h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Feedback Display */
+#feedbackDisplay {
+    text-align: left;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackDisplay p {
+    font-size: 18px;
+    color: #444;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+/* Last paragraph (removes bottom border) */
+#feedbackDisplay p:last-child {
+    border-bottom: none;
+}
+
+/* Strong Text (Labels) */
+#feedbackDisplay p strong {
+    color: #222;
+}
+
+/* No Feedback Message */
+#feedbackDisplay p.no-feedback {
+    color: red;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+#clearFeedback {
+    background-color: #dc3545; /* Default button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#clearFeedback:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #feedbackDisplay p {
+        font-size: 16px;
